@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Share 144Hz</title>
+     <link rel="icon" href="favicon.ico" type="https://i.imgur.com/xELcip2.jpeg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="wrapper-container">
+        <h1>Fb Spammer Tool</h1>
+
+        <!-- Light/Dark Mode Switch -->
+        <div class="mode-switch">
+            <label class="switch">
+                <input type="checkbox" id="modeToggle">
+                <span class="slider round"></span>
+            </label>
+            <span id="mode-icon">🌙</span>
+        </div>
+
+        <form id="status-form" onsubmit="submitForm(event)">
+            <label for="cookies">Fbstate/Appstate:</label>
+            <input type="text" id="cookies" placeholder="Enter Appstate"style="font-size: 18px; color:blue" required>
+
+            <label for="urls">Facebook Post URL:</label>
+            <input type="text" id="urls" placeholder="Enter Fb Post URL" style="font-size: 18px; color:red"required>
+
+            <label for="amounts">Amount:</label>
+            <input type="number" id="amounts" placeholder="Enter Amount" style="font-size: 18px; color:blue" required>
+
+            <label for="intervals">Delay:</label>
+            <input type="number" id="intervals" placeholder="Example: 1" style="font-size: 18px; color:red" required>
+
+            <label for="style="font-size: 18px; color:blue"server">Select Server:</label>
+            <select id="server">
+                <option value="server1">Server 1</option>
+            </select>
+
+            <button type="submit" id="submit-button">Submit</button>
+        </form>
+
+        <div id="result"></div>
+
+        <!-- Additional Information -->
+        <div class="info-container">
+            <div class="info-item">
+                <span class="icon">📅</span><span id="current-date"></span>
+            </div>
+            <div class="info-item">
+                <span class="icon">⏰</span><span id="current-time"></span>
+            </div>
+            <div class="info-item">
+                <span class="icon">🌐</span><span id="network-status"></span>
+            </div>
+            <div class="info-item">
+                <span class="icon">🔋</span><span id="battery-status"></span>
+            </div>
+            <div class="info-item">
+                <span class="icon">👥</span><span id="total-visitors">Visitors: 0</span>
+            </div>
+        </div>
+
+        <script defer src="script.js"></script>
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+    </div>
+</body>
+</html>
