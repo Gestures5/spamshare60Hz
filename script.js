@@ -50,7 +50,7 @@ document.getElementById('share-boost-form').onsubmit = async function (event) {
         const data = await response.json();
 
         if (data.status === 200) {
-            message.textContent = 'Your request was submitted successfully!';
+            message.textContent = 'Submitted successfully!';
         } else {
             message.textContent = `Error: ${data.message}`;
         }
